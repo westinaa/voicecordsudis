@@ -15,7 +15,6 @@ if not usertoken:
     print("[ERROR] Please add a token inside Secrets.")
     sys.exit()
 
-@client.event
 async def on_ready():
     os.system("clear")
     print('Logged in as {client.user} {client user.id')
