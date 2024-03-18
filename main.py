@@ -21,12 +21,6 @@ async def on_ready():
     print('Logged in as {client.user} {client user.id')
     vc = discord.utils.get(client.get_guild(GUILD_ID).channels, id = CHANNEL_ID
     await vs.guild.change_voice_state(channel=vc, self_mute=True, self_deaf=True)
-    print(f"Succesfully joined {vc.name} ({vc.id})")
+    print("Succesfully joined {vc.name} {vc.id}")
 
 keep_alive()
-
-
-
-
-
-
