@@ -22,11 +22,6 @@ if not usertoken:
 SELF_MUTE = True
 SELF_DEAF = False
 
-usertoken = os.getenv("TOKEN")
-if not usertoken:
-  print("[ERROR] Please add a token inside Secrets.")
-  sys.exit()
-
 headers = {"Authorization": usertoken, "Content-Type": "application/json"}
 
 validate = requests.get('https://canary.discordapp.com/api/v9/users/@me', headers=headers)
