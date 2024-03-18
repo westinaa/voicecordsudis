@@ -19,7 +19,7 @@ if not usertoken:
 async def on_ready():
     os.system("clear")
     print('Logged in as {client.user} {client user.id')
-    vc = discord.utils.get(client.get_guild(GUILD_ID).channels, id = CHANNEL_ID
+    vc = discord.utils.get(client.get_guild(GUILD_ID).channels, id = CHANNEL_ID)
     await vs.guild.change_voice_state(channel=vc, self_mute=True, self_deaf=True)
     print("Succesfully joined {vc.name} {vc.id}")
 
