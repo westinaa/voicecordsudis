@@ -1,9 +1,9 @@
-import discord
 import os
-from discord.ext import commands
+import sys
+import json
+import time
+import requests
 from keep_alive import keep_alive
-
-client=commands.Bot(command_prefix=".", self_bot=True, help_command=None)
 
 GUILD_ID = os.getenv("guild_id")
 CHANNEL_ID = os.getenv("channel_id")
